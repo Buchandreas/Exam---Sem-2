@@ -1,0 +1,36 @@
+body{
+    background-color: #FFFDE9;
+    color: #6B1E6C;
+}
+
+.navbar {
+    background-color: #FFFDE9;
+    color: #6B1E6C;
+}
+
+.navbar-light{
+    background-color: #FFFDE9;
+}
+
+.bg-company-red {
+    background-color: #FFFDE9 !important;
+}
+
+.card {
+    background-color: #FFFDE9;
+    color: #f2bee3;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.carousel-caption-textbox {
+    background-color: #00000078;
+}
+
+.footer {
+    color: black;
+    background-color:#FFFDE9;
+}

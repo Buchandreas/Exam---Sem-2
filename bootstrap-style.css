@@ -131,23 +131,22 @@ iframe {
     margin: 0 auto;
  }
 
- /* NAVBAR IMAGE */
+ /* IMAGES */
 
  #navbar-image {
     display: block;
     margin: 0 auto;
  }
 
- /* CAROUSEL IMAGE */
-
  #carousel-image {
     display: block;
     margin: 0 auto;
  }
 
-
-
-
+ #self-hosting-image {
+    display: block;
+    margin: 0 auto;
+ }
 
 
 /* QUIZ */

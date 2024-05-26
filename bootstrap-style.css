@@ -124,6 +124,27 @@ h1 {
     color: #006798;
 }
 
+/* VIDEO */
+
+iframe {
+    display: block;
+    margin: 0 auto;
+ }
+
+ /* NAVBAR IMAGE */
+
+ #navbar-image {
+    display: block;
+    margin: 0 auto;
+ }
+
+ /* CAROUSEL IMAGE */
+
+ #carousel-image {
+    display: block;
+    margin: 0 auto;
+ }
+
 
 
 

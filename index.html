@@ -11,14 +11,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Link til eget stylesheet -->
     <link rel="stylesheet" href="bootstrap-style.css">
+    <!-- Link til google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 
-    <title>How to code a website</title>
+    <title>Girlcode</title>
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-company-red">
+    <!-- NAVBAR SECTION -->
+
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><i class="bi bi-filetype-html mx-2"></i>How to code a website</a>
+          <a class="navbar-brand" href="index.html"><img style="width: 20lvh;" src="images/logo.png" alt=""></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -28,166 +34,147 @@
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Menu
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Guides
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="action.html">Option 1</a></li>
-                  <li><a class="dropdown-item" href="comedy.html">Option 2</a></li>
-                  <li><a class="dropdown-item" href="drama.html">Option 3</a></li>
-                  <li><a class="dropdown-item" href="musical.html">Option 4</a></li>
-                  <li><a class="dropdown-item" href="science-fiction.html">Option 5</a></li>
-                  <li><a class="dropdown-item" href="thriller.html">Option 6</a></li>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
+                  <li><a class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
+                  <li><a class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="index.html">Other guides</a></li>
                 </ul>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About us</a>
+              </li>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      <!-- CAROUSEL SECTION -->
+      <!-- BACKGROUND IMAGE SECTION -->
 
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <div class="bg-image">
+        <img src="images/banner.png" class="w-100" />
+        <div class="banner-text">
+          <h1>Coding doesn't need to be hard</h1>
+          <h4>Start your journey with <img style="width: 175px;" src="images/logo.png" alt=""></h4>
+          <p>Because coding is for everyone.</p>
+          <button class="rounded-3"><a href="#guides-section">START NOW</a></button>
         </div>
-
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/wallpaper-sample.jpg" class="d-block w-100" alt="sample">
-            <div class="carousel-caption d-none d-md-block">
-                <div class="carousel-caption-textbox">
-                    <h5>Sample</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae aliquid sunt distinctio nam, corrupti dolores? Ut incidunt asperiores excepturi amet.</p>
-                </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/wallpaper-sample-2.jpg" class="d-block w-100" alt="sample">
-            <div class="carousel-caption d-none d-md-block">
-                <div class="carousel-caption-textbox">
-                    <h5>Sample 2</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid non doloremque rem ad minima magni hic, debitis eum nihil blanditiis.</p>
-                </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/wallpaper-sample-3.jpg" class="d-block w-100" alt="sample">
-            <div class="carousel-caption d-none d-md-block">
-                <div class="carousel-caption-textbox">
-                    <h5>Sample 3</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid non doloremque rem ad minima magni hic, debitis eum nihil blanditiis.</p>
-                </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="images/wallpaper-sample-4.jpg" class="d-block w-100" alt="sample">
-            <div class="carousel-caption d-none d-md-block">
-                <div class="carousel-caption-textbox">
-                    <h5>Sample 4</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid non doloremque rem ad minima magni hic, debitis eum nihil blanditiis.</p>
-                </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
 
-      <!-- IMAGE SECTION -->
+    
 
-      <!-- <img src="images/wallpaper-sample.jpg" class="img-fluid" alt="sample"> -->
-
-
-      <!-- TEXT SECTION -->
-
-      <div class="container mt-5 mb-5">
-        <h1>How to code a website</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde placeat, facilis dolorum officiis modi accusamus doloribus animi autem excepturi nulla laborum fugit rem distinctio perspiciatis omnis laudantium earum illo tempore hic ratione similique atque. Est consequuntur adipisci nisi laudantium ea! Officiis nam vitae ratione magnam dolore dolor, debitis molestias fugiat maiores et. Tempora officia aspernatur unde dolorum asperiores, doloremque in earum amet aut commodi ullam, quidem sit! Accusamus molestiae doloribus aut reiciendis provident excepturi unde saepe cum. Inventore eveniet mollitia ex in rerum officiis deserunt a non aspernatur iusto animi, eligendi, nam eos dolorum, corrupti ipsum suscipit dicta molestiae porro minus fugit. Aliquid enim doloribus esse atque cum maiores accusantium quos, placeat eius itaque repellendus blanditiis quibusdam, amet aperiam quas repudiandae earum provident. Quos officia fugiat quam dignissimos iusto distinctio quo nam. Id labore accusamus et iusto ad, necessitatibus unde aliquid eius rem asperiores odit quod totam ut iste libero nobis? Iusto itaque architecto consequatur? Voluptas, eos accusantium quod numquam debitis ducimus nobis sit, temporibus tenetur maxime nemo unde dolor ex totam atque laudantium? Porro sequi at hic, modi corrupti aspernatur voluptates quisquam nulla pariatur odit atque deleniti iste soluta placeat, libero praesentium ea temporibus illo quis voluptate optio. Tempora.</p>
-      </div>
 
       <!-- CARD SECTION -->
 
       <div class="container mt-5 mb-5">
+        <h1 class="text-center">What's in it for you?</h1>
+      </div>
+
+      <div class="container justify-content-center">
+        <div class="row g-2 justify-content-center">
+
+            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <h3 class="card-title pb-4">Hands-on learning</h3>
+                        <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui nam aspernatur eum inventore autem magni eligendi rerum nulla iusto deserunt repellendus officiis, illo recusandae et aliquam corporis? Nesciunt, recusandae!</p>
+                        <h1 class="position-absolute bottom-0">01</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+              <div class="card mb-5">
+                  <div class="card-body">
+                      <h3 class="card-title pb-4">Mentorship by our experts</h3>
+                      <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui nam aspernatur eum inventore autem magni eligendi rerum nulla iusto deserunt repellendus officiis, illo recusandae et aliquam corporis? Nesciunt, recusandae!</p>
+                      <h1 class="position-absolute bottom-0">02</h1>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-5">
+                <div class="card-body">
+                    <h3 class="card-title pb-4">Widely applicaple skills</h3>
+                    <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui nam aspernatur eum inventore autem magni eligendi rerum nulla iusto deserunt repellendus officiis, illo recusandae et aliquam corporis? Nesciunt, recusandae!</p>
+                    <h1 class="position-absolute bottom-0">03</h1>
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+      </div>
+
+      <!-- BANNER IMAGE SECTION -->
+
+      <div class="container">
+        <div class="bg-image mb-5" 
+     style="background-image: url('images/empower.png');
+            height: 100vh;
+            background-repeat: no-repeat;">
+      </div>
+      </div>
+
+      
+      <!-- TEXT SECTION -->
+
+      <div class="container mb-5">
+        <h5>Women hold just 25% of all coding jobs, and earn 30% less than men</h5>
+        <h2>Girlcode is here to change that</h2>
+      </div>
+
+      
+
+      <!-- GUIDE SECTION -->
+
+      <div id="guides-section" class="container mb-5">
         <h1>Guides</h1>
       </div>
 
       <div class="container justify-content-center">
         <div class="row g-2 justify-content-center">
 
-
             <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
                 <div class="card mb-5">
-                    <img src="images/card-sample.jpeg" class="card-img-top d-flex" alt="Card 1">
+                    <img src="images/navbar-card.gif" class="card-img-top d-flex" alt="Card 1">
                     <div class="card-body">
-                        <h5 class="card-title"><a href="action.html">Card 1</a></h5>
+                        <h5 class="card-title">Navigation bar</h5>
+                        <p class="card-text">Learn how to build a navigation bar for your website</p>
+                        <a href="navbar-guide.html" class="btn btn-custom">Read more</a>
                     </div>
                 </div>
             </div>
 
             <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <div class="card mb-5">
-                    <img src="images/card-sample.jpeg" class="card-img-top d-flex" alt="Card 1">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="action.html">Card 1</a></h5>
-                    </div>
-                </div>
-            </div>
+              <div class="card mb-5">
+                  <img src="images/carousel-card.gif" class="card-img-top d-flex" alt="Card 1">
+                  <div class="card-body">
+                      <h5 class="card-title">Carousel</h5>
+                      <p class="card-text">Learn how to build a carousel for your website</p>
+                      <a href="carousel-guide.html" class="btn btn-custom">Read more</a>
+                  </div>
+              </div>
+          </div>
 
-            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <div class="card mb-5">
-                    <img src="images/card-sample.jpeg" class="card-img-top d-flex" alt="Card 1">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="action.html">Card 1</a></h5>
-                    </div>
+          <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+            <div class="card mb-5">
+                <img src="images/hosting-card.gif" class="card-img-top d-flex" alt="Card 1">
+                <div class="card-body">
+                    <h5 class="card-title">Hosting</h5>
+                    <p class="card-text">Learn how to host your website</p>
+                    <a href="hosting-guide.html" class="btn btn-custom">Read more</a>
                 </div>
             </div>
-            
-            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <div class="card mb-5">
-                    <img src="images/card-sample.jpeg" class="card-img-top d-flex" alt="Card 1">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="action.html">Card 1</a></h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <div class="card mb-5">
-                    <img src="images/card-sample.jpeg" class="card-img-top d-flex" alt="Card 1">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="action.html">Card 1</a></h5>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <div class="card mb-5">
-                    <img src="images/card-sample.jpeg" class="card-img-top d-flex" alt="Card 1">
-                    <div class="card-body">
-                        <h5 class="card-title"><a href="action.html">Card 1</a></h5>
-                    </div>
-                </div>
-            </div>
-
+          </div>
 
         </div>
       </div>
-
-
-
-
-
-
 
 
 
@@ -195,22 +182,22 @@
 
       <footer class="footer text-center text-lg-start mt-5">
         <div class="container d-flex justify-content-center pt-5">
-            <h5>© 2024 How to code a website</h5>
+            <h5>© 2024 Girlcode</h5>
         </div>
         <div class="container d-flex justify-content-center">
             <p>Follow us on social media:</p>
         </div>
         <div class="container d-flex justify-content-center pb-5">
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: black;">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
             <i class="bi bi-facebook"></i>
           </button>
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: black;">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
             <i class="bi bi-instagram"></i>
           </button>
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: black;">
-            <i class="bi bi-pinterest"></i>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
+            <i class="bi bi-tiktok"></i>
           </button>
-          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: black;">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
             <i class="bi bi-youtube"></i>
           </button>
         </div>

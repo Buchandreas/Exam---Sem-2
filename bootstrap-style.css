@@ -89,7 +89,24 @@ h1 {
 
 .bg-image a {
     color: #FF99AD;
+    text-decoration: none;
 
+}
+
+.quiz button {
+    background-color: #006798;
+    border: none;
+    color: #FF99AD;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    width: 10rem;
+    height: 3rem;
+}
+
+.quiz a {
+    color: #FF99AD;
+    text-decoration: none;
 }
 
 /* EMTPY SPACE */

@@ -32,22 +32,24 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a id="navbar_home" class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Guides
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Guides</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
-                  <li><a class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
-                  <li><a class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
+                  <li><a id="navbar_navbar" class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
+                  <li><a id="navbar_carousel" class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
+                  <li><a id="navbar_hosting" class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="index.html">Other guides</a></li>
+                  <li><a id="navbar_other" class="dropdown-item" href="index.html">Other guides</a></li>
                 </ul>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html">About us</a>
+                <a id="navbar_about" class="nav-link active" aria-current="page" href="about.html">About us</a>
               </li>
+
+              <button class="lang-button-eng mx-1" onclick="changeLanguage('en')"></button>
+              <button class="lang-button-dk mx-1" onclick="changeLanguage('dk')"></button>
+              
               </li>
             </ul>
           </div>
@@ -67,22 +69,18 @@
             <div class="row">
               <div class="col-2">
                 <h1><br></h1>
-                <p id="about-tagline">About us.<br> Our team.<br> Our services.</p>
+                <p id="text_tagline">About us.<br> Our team.<br> Our services.</p>
               </div>
               <div class="col">
-                <h1>ABOUT US</h1>
-                <p>Welcome to our empowering community dedicated to teaching women how to code! At Girlcode, we believe that coding is for everyone, regardless of gender. Our mission is to break down barriers and provide a supportive environment where women can learn, grow, and excel in the world of technology. <br> <br>
-
-                Founded by passionate educators and industry professionals, our platform offers a diverse range of coding resources, tutorials, and mentorship opportunities tailored specifically to women. Whether you're a beginner taking your first steps into the world of coding or an experienced developer looking to expand your skills, we're here to support you every step of the way. <br> <br>
-                
-                Join our vibrant community of like-minded individuals, participate in coding challenges, attend workshops, and connect with inspiring women in tech. Together, let's bridge the gender gap in the tech industry and pave the way for a more inclusive and diverse future. <br> <br>
-                
-                Get ready to unleash your potential and embark on an exciting journey of learning, innovation, and empowerment with Girlcode. Let's code, create, and conquer together!
+                <h1 id="text_heading">ABOUT US</h1>
+                <p id="text_text">Welcome to our empowering community dedicated to teaching women how to code! At Girlcode, we believe that coding is for everyone, regardless of gender. Our mission is to break down barriers and provide a supportive environment where women can learn, grow, and excel in the world of technology. <br> <br> Founded by passionate educators and industry professionals, our platform offers a diverse range of coding resources, tutorials, and mentorship opportunities tailored specifically to women. Whether you're a beginner taking your first steps into the world of coding or an experienced developer looking to expand your skills, we're here to support you every step of the way. <br> <br>Join our vibrant community of like-minded individuals, participate in coding challenges, attend workshops, and connect with inspiring women in tech. Together, let's bridge the gender gap in the tech industry and pave the way for a more inclusive and diverse future. <br> <br>Get ready to unleash your potential and embark on an exciting journey of learning, innovation, and empowerment with Girlcode. Let's code, create, and conquer together!
                 </p>
               </div>
             </div>
           </div>
       </div>
+
+      <!-- QUOTE SECTION -->
 
       <div class="container">
         <div class="py-5">
@@ -93,7 +91,7 @@
                     <div class="empty"></div>
                     <div class="empty"></div>
                     <div class="empty"></div>
-                    <h1>"Empowering women through code, shaping tomorrow's tech"</h1>
+                    <h1 id="quote_heading">"Empowering women through code, shaping tomorrow's tech"</h1>
                     <p>Emily Rodriguez, Professor</p>
                   </div>
                   <div class="quote-picture col-6 mx-5">
@@ -107,7 +105,7 @@
       <!-- TEAM SECTION -->
 
       <div class="container mt-5 mb-5">
-        <h1 class="mb-5 text-center">THE TEAM</h1>
+        <h1 id="team_heading" class="mb-5 text-center">THE TEAM</h1>
       </div>
 
       <div class="container justify-content-center">
@@ -117,8 +115,9 @@
                 <div class="card mb-5 mx-3">
                     <div class="card-body">
                         <img class="w-100" src="images/team-1.jpg" alt="">
-                        <h2 class="card-title pt-4 pb-3">EMILY</h2>
-                        <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui nam aspernatur eum inventore autem magni eligendi rerum nulla iusto deserunt repellendus officiis, illo recusandae et aliquam corporis? Nesciunt, recusandae!</p>
+                        <h2 class="card-title pt-4">EMILY</h2>
+                        <h5 id="team_member1_subheading" class="pb-3">Team leader</h5>
+                        <p id="team_member1_text" class="card-text mb-5">Emily leads our team with over a decade of experience in software development and project management. Her strategic vision and leadership ensure we achieve our goals efficiently.</p>
                     </div>
                 </div>
             </div>
@@ -127,8 +126,9 @@
                 <div class="card mb-5 mx-3">
                     <div class="card-body">
                         <img class="w-100" src="images/team-2.jpg" alt="">
-                        <h2 class="card-title pt-4 pb-3">PATRICIA</h2>
-                        <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui nam aspernatur eum inventore autem magni eligendi rerum nulla iusto deserunt repellendus officiis, illo recusandae et aliquam corporis? Nesciunt, recusandae!</p>
+                        <h2 class="card-title pt-4">PATRICIA</h2>
+                        <h5 id="team_member2_subheading" class="pb-3">Lead Developer</h5>
+                        <p id="team_member2_text" class="card-text mb-5">Patricia, our technical expert, excels in various programming languages and innovative solutions. Her mentorship and problem-solving skills are key to our success.</p>
                     </div>
                 </div>
             </div>
@@ -137,8 +137,9 @@
                 <div class="card mb-5 mx-3">
                     <div class="card-body">
                         <img class="w-100" src="images/team-3.jpg" alt="">
-                        <h2 class="card-title pt-4 pb-3">RUBY</h2>
-                        <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui nam aspernatur eum inventore autem magni eligendi rerum nulla iusto deserunt repellendus officiis, illo recusandae et aliquam corporis? Nesciunt, recusandae!</p>
+                        <h2 class="card-title pt-4">RUBY</h2>
+                        <h5 id="team_member3_subheading" class="pb-3">Community Specialist</h5>
+                        <p id="team_member3_text" class="card-text mb-5">Ruby fosters a supportive and inclusive community. With her background in social work and community management, she creates programs that encourage participation and growth.</p>
                     </div>
                 </div>
             </div>
@@ -154,15 +155,14 @@
                 <div class="row">
                   <div class="col">
                     <div class="align-items-stretch" id="services-content-left">
-                        <h3>Empowering workshops and events</h3>
-                        <p>Participate in our empowering workshops and events tailored specifically for women in tech. From coding bootcamps to networking events, we offer opportunities to learn, grow, and connect with like-minded individuals in the industry. <br> <br>
-                        Access our extensive library of coding tutorials, courses, and workshops designed to cater to all skill levels. Whether you're just starting out or looking to advance your coding skills, we have something for everyone.</p>
+                        <h3 id="services_subheading1">Empowering workshops and events</h3>
+                        <p id="services_text1">Participate in our empowering workshops and events tailored specifically for women in tech. From coding bootcamps to networking events, we offer opportunities to learn, grow, and connect with like-minded individuals in the industry. <br> <br>Access our extensive library of coding tutorials, courses, and workshops designed to cater to all skill levels. Whether you're just starting out or looking to advance your coding skills, we have something for everyone.</p>
                     </div>
                   </div>
                   <div class="col">
                     <div class="align-items-stretch" id="services-content-right">
-                        <h3>Career development assistance</h3>
-                        <p>Take advantage of our career development resources to help you land your dream job in tech. From resume building to interview preparation, we're here to support you in advancing your career and achieving your goals. Our career services include personalized resume reviews, mock interviews, and job search assistance. Additionally, we provide insights into industry trends and networking opportunities to help you stay ahead in the competitive tech landscape. Let us empower you to reach new heights in your tech career.</p>
+                        <h3 id="services_subheading2">Career development assistance</h3>
+                        <p id="services_text2">Take advantage of our career development resources to help you land your dream job in tech. From resume building to interview preparation, we're here to support you in advancing your career and achieving your goals. Our career services include personalized resume reviews, mock interviews, and job search assistance. Additionally, we provide insights into industry trends and networking opportunities to help you stay ahead in the competitive tech landscape. Let us empower you to reach new heights in your tech career.</p>
                     </div>
                   </div>
                 </div>
@@ -172,7 +172,7 @@
           <!-- PARTNERS SECTION -->
 
           <div class="container mt-5 mb-5">
-            <h1 class="mb-5 text-center">PARTNERS</h1>
+            <h1 id="partners_heading" class="mb-5 text-center">PARTNERS</h1>
           </div>
     
           <div class="container justify-content-center">
@@ -220,14 +220,14 @@
           <!-- CONTACT SECTION -->
 
           <div class="container mb-5">
-            <h1 class="text-center">CONTACT US</h1>
+            <h1 id="contact_heading" class="text-center">CONTACT US</h1>
           </div>
 
           <div class="contact container py-3 rounded-3">
-            <h3 class="mb-5">Have questions? Contact us!</h3>
+            <h3 id="contact_subheading" class="mb-5">Have questions? Contact us!</h3>
 
-            <p><a href="mailto:girlcode@info.com" target="_blank">Send us an email</a></p>
-            <p><a href="tel:+45 12 34 56 78">Call us</a></p>
+            <p><a id="contact_email" href="mailto:girlcode@info.com" target="_blank">Send us an email</a></p>
+            <p><a id="contact_phone" href="tel:+45 12 34 56 78">Call us</a></p>
 
           </div>
 
@@ -265,6 +265,7 @@
     
 
     <!-- Optional JavaScript; choose one of the two! -->
+    <script src="javascript/about_script.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

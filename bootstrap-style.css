@@ -36,6 +36,34 @@ h1 {
 
 
 
+/* NAVBAR GUIDE */
+
+.code_container {
+    background-color: #FFE9EC;
+}
+
+
+
+
+/* LANGUAGE BUTTONS */
+
+.lang-button-eng {
+    background-image: url('images/flags/gb.svg');
+    width: 3rem;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+.lang-button-dk {
+    background-image: url('images/flags/dk.svg');
+    width: 3rem;
+    border: none;
+    background-repeat: no-repeat;
+}
+
+
+
+
 /* CARD */
 
 .card {
@@ -109,11 +137,15 @@ h1 {
     text-decoration: none;
 }
 
+
+
+
 /* EMTPY SPACE */
 
 .empty {
     height: 50px;
 }
+
 
 
 
@@ -123,9 +155,14 @@ h1 {
     background-color: #FFE9EC;
 }
 
-#about-tagline {
+#text_tagline {
     font-weight: 700;
     font-style: italic;
+    white-space: pre-line;
+}
+
+#text_text {
+    white-space: pre-line;
 }
 
 .contact {
@@ -136,11 +173,42 @@ h1 {
     color: #006798;
 }
 
+#team_member1_subheading {
+    color: #006798;
+}
+
+#team_member2_subheading {
+    color: #006798;
+}
+
+#team_member3_subheading {
+    color: #006798;
+}
+
+#services_text1 {
+    white-space: pre-line;
+}
+
+#services_text2 {
+    white-space: pre-line;
+}
+
+
+
+
 /* QUOTE */
 
 .quote-container h1 {
     font-style: italic;
 }
+
+#quote_heading {
+    white-space: pre-line;
+}
+
+
+
+
 
 /* PARTNERS */
 
@@ -149,6 +217,10 @@ h1 {
     color: #006798;
 }
 
+
+
+
+
 /* VIDEO */
 
 iframe {
@@ -156,6 +228,10 @@ iframe {
     margin: 0 auto;
  }
 
+ 
+ 
+ 
+ 
  /* IMAGES */
 
  #navbar-image {
@@ -174,11 +250,14 @@ iframe {
  }
 
 
-/* QUIZ */
+
+
+ /* QUIZ */
 
 .quiz {
     background-color: #FFE9EC;
 }
+
 
 
 
@@ -187,6 +266,8 @@ iframe {
 .quote h1 {
     color: #006798;
 }
+
+
 
 
 /* SERVICES */

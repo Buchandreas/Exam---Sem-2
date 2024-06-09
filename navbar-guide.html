@@ -31,22 +31,24 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a id="navbar_home" class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Guides
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Guides</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
-                  <li><a class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
-                  <li><a class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
+                  <li><a id="navbar_navbar" class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
+                  <li><a id="navbar_carousel" class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
+                  <li><a id="navbar_hosting" class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="index.html">Other guides</a></li>
+                  <li><a id="navbar_other" class="dropdown-item" href="index.html">Other guides</a></li>
                 </ul>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html">About us</a>
+                <a id="navbar_about" class="nav-link active" aria-current="page" href="about.html">About us</a>
               </li>
+
+              <button class="lang-button-eng mx-1" onclick="changeLanguage('en')"></button>
+              <button class="lang-button-dk mx-1" onclick="changeLanguage('dk')"></button>
+              
               </li>
             </ul>
           </div>
@@ -58,120 +60,212 @@
 
       <div class="container mt-5 mb-5">
         <h1 class="text-center">NAVIGATION BAR</h1>
-        <p>To code a navbar is a basic but important part of web development. A navbar acts as a navigation bar, typically positioned at the top of a webpage, containing links to various sections or pages of the website. Here is a brief introduction to how to code a simple navbar using HTML, CSS, or Bootstrap.</p>
+        <p>Welcome to our comprehensive guide on coding a navigation bar! Navigation bars are a fundamental part of web design, providing users with an intuitive way to explore your site. In this tutorial, we'll dive into the different types of navigation bars, their importance, and step-by-step instructions on creating them from scratch</p>
     </div>
-
-    <!-- CARD SECTION -->
-
-    <div class="container justify-content-center">
-        <div class="row g-2 justify-content-center">
-
-            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <div class="card mb-5 mx-3">
-                    <div class="card-body">
-                        <h5 class="card-title">Pure HTML/CSS Navbar:</h5>
-                        <p class="card-text">This method involves using HTML for the structure of the navbar (e.g., nav, ul, li, a elements) and CSS for styling (e.g., colors, fonts, spacing). It's straightforward and lightweight, making it a good choice for simple websites.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-              <div class="card mb-5 mx-3">
-                  <div class="card-body">
-                      <h5 class="card-title">Framework-Based Navbar:</h5>
-                      <p class="card-text">Many front-end frameworks like Bootstrap, Foundation, or Bulma offer pre-built navbar components that you can easily customize and integrate into your website. These frameworks provide a wide range of features and styles out of the box, saving time and effort in development.</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-            <div class="card mb-5 mx-3">
-                <div class="card-body">
-                    <h5 class="card-title">CSS Grid Navbar:</h5>
-                    <p class="card-text">CSS Grid layout is another CSS-based approach for creating complex and grid-based layouts. You can use CSS Grid to design a navbar with multiple rows or columns, enabling more sophisticated designs and arrangements compared to traditional CSS techniques.</p>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-            <div class="card mb-5 mx-3">
-                <div class="card-body">
-                    <h5 class="card-title">Flexbox Navbar:</h5>
-                    <p class="card-text">Flexbox is a CSS layout model that allows you to create flexible and responsive layouts with ease. You can use Flexbox to build a navbar that adjusts its size and alignment based on the available space and screen size, making it ideal for responsive web design.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-          <div class="card mb-5 mx-3">
-              <div class="card-body">
-                  <h5 class="card-title">JavaScript-Based Navbar:</h5>
-                  <p class="card-text">If you need more advanced functionality or interactivity in your navbar (e.g., dropdown menus, slide-in effects, sticky behavior), you can use JavaScript or a JavaScript library/framework like jQuery or React to achieve the desired behavior. JavaScript can handle user interactions and dynamic updates in real-time, enhancing the user experience.</p>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-        <div class="card mb-5 mx-3">
-            <div class="card-body">
-                <h5 class="card-title">Combination of HTML/CSS/JavaScript:</h5>
-                <p class="card-text">You can also combine different technologies to create a navbar that meets your specific requirements. For example, you might use HTML and CSS for the basic structure and styling of the navbar, and then add JavaScript to implement additional features or enhancements.</p>
-            </div>
-        </div>
-      </div>
-
-        </div>
-      </div>
 
       <!-- ELABORATION SECTION 1 -->
 
       <div class="container mb-5">
         <h1 class="text-center">ELABORATION</h1>
-        <h3>Pure HTML/CSS Navbar:</h3>
-        <p>Creating a Pure HTML/CSS Navbar involves crafting a navigation bar for a website using only the fundamental web technologies of HTML for structure and CSS for styling. This approach offers simplicity and lightweightness, making it an excellent choice for projects where minimalism and customizability are prioritized.
-            To begin, you'd structure the navbar using HTML elements such as nav, ul, li, and a. The nav element acts as the container for the navigation bar, while the ul (unordered list) and li (list item) elements create the list of navigation links. Each link is represented by an a (anchor) element, pointing to different sections or pages of the website.</p>
+
+        <!-- NAVBAR GUIDE -->
+
+        <h3>Basic Structure:</h3>
+        <p>A navigation bar, or navbar, is typically a collection of links guiding users to various sections of a website. Here's the basic HTML structure for a simple navigation bar:</p>
+
+        <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:28%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%2520%2520%2520%2520%253C%21--%2520Basic%2520Structure%2520%28This%2520is%2520placed%2520inside%2520body%29%2520--%253E%250A%2520%2520%2520%2520%253Cnav%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523home%2522%253EHome%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523about%2522%253EAbout%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523services%2522%253EServices%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523contact%2522%253EContact%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fnav%253E"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+        </div>
+
+
+
+        <img id="navbar-image" class="mb-5" src="images/navbar/Nav_html.png" alt="">
+        <p>
+          <ul>
+          <li><code>&lt;nav&gt;</code> tag: Defines the navigation section.</li>
+          <li><code>&lt;ul&gt;</code> tag: Represents an unordered list of links.</li>
+          <li><code>&lt;li&gt;</code> tag: Each list item within the unordered list.</li>
+          <li><code>&lt;a&gt;</code>; tag: Anchor tags represent the actual links.</li>
+          </ul>
+          </p>
+          
+          <img id="navbar-image" class="mb-5" src="images/navbar/Nav_uden_css.png" alt="">
+          <p>This is how the navigation bar should look so far</p>
+
+          <!-- Navbar-guide Styling the Navbar-->
+
+            <h3>Styling the Navbar</h3>
+            <p>Styling the navigation bar is crucial for making it visually appealing and user-friendly. Below is a basic CSS example to style the navbar:</p>
+            
+            <div class="code_container container mb-5 rounded-3">
+                <div style="padding-bottom:48%; position:relative; display:block; width: 100%">
+                    <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520Styling%2520the%2520navigaton%2520bar%2520*%252F%250Anav%2520%257B%250A%2520%2520%2520%2520background-color%253A%2520%2523333%253B%250A%257D%250Anav%2520ul%2520%257B%250A%2520%2520%2520%2520list-style-type%253A%2520none%253B%250A%2520%2520%2520%2520margin%253A%25200%253B%250A%2520%2520%2520%2520padding%253A%25200%253B%250A%2520%2520%2520%2520overflow%253A%2520hidden%253B%250A%257D%250Anav%2520ul%2520li%2520%257B%250A%2520%2520%2520%2520float%253A%2520left%253B%250A%257D%250Anav%2520ul%2520li%2520a%2520%257B%250A%2520%2520%2520%2520display%253A%2520block%253B%250A%2520%2520%2520%2520color%253A%2520white%253B%250A%2520%2520%2520%2520text-align%253A%2520center%253B%250A%2520%2520%2520%2520padding%253A%252014px%252016px%253B%250A%2520%2520%2520%2520text-decoration%253A%2520none%253B%250A%257D%250Anav%2520ul%2520li%2520a%253Ahover%2520%257B%250A%2520%2520%2520%2520background-color%253A%2520%2523111%253B%250A%257D"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                  </div>
+            </div>
+
+            <p>
+              <ul>
+                  <li><code>background-color</code>: Sets the background color of the navigation bar.</li>
+                  <li><code>list-style-type</code>: Removes default list styling.</li>
+                  <li><code>overflow: hidden</code>: Ensures the content stays within the navbar.</li>
+                  <li><code>float: left</code>: Aligns the list items horizontally.</li>
+                  <li><code>text-align: center</code>: Centers the text within each link.</li>
+                  <li><code>:hover</code>: Changes the background color when the user hovers over a link.</li>
+              </ul>
+          </p>
+
+          <!-- Navbar-guide Responsive Design-->
+
+          <h3>Responsive Design</h3>
+          <p>A responsive navigation bar adapts to different screen sizes, enhancing the user experience across devices. Media queries are used to achieve this:</p>
+
+          <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:23%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520Responsive%2520design%2520*%252F%250A%2540media%2520screen%2520and%2520%28max-width%253A%2520600px%29%2520%257B%250A%2520%2520%2520%2520nav%2520ul%2520li%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520float%253A%2520none%253B%250A%2520%2520%2520%2520%257D%250A%257D"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+          </div>
+
+          <ul>
+            <li><code>@media screen and (max-width: 600px)</code>: Applies styles for screens 600px wide or smaller.</li>
+            <li><code>float: none</code>: Stacks the menu items vertically on smaller screens.</li>
+        </ul>
+
+        <!-- Navbar-guide Advanced Features-->
+
+        <h3>Advanced Features</h3>
+        <p>Enhance your navigation bar with dropdown menus for a more interactive experience.</p>
+        <p>HTML for Dropdown</p>
+        
+        <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:43%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Basic%2520Structure%2520%28This%2520is%2520placed%2520inside%2520body%29%2520--%253E%250A%2520%2520%2520%2520%253Cnav%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523home%2522%253EHome%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523about%2522%253EAbout%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523services%2522%253EServices%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523contact%2522%253EContact%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fnav%253E%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%250A%2520%2520%2520%2520%253C%21--%2520Html%2520for%2520Dropdown%2520%28This%2520is%2520placed%2520inside%2520body%29%2520--%253E%250A%2520%2520%2520%2520%253Cli%2520class%253D%2522dropdown%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522javascript%253Avoid%280%29%2522%2520class%253D%2522dropbtn%2522%253EDropdown%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522dropdown-content%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523link1%2522%253ELink%25201%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523link2%2522%253ELink%25202%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Ca%2520href%253D%2522%2523link3%2522%253ELink%25203%253C%252Fa%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fli%253E"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+        </div>
+
+
+        <p>CSS for Dropdown</p>
+        
+        <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:31%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520Css%2520for%2520Dropdown%2520*%252F%250A.dropdown-content%2520%257B%250A%2520%2520%2520%2520display%253A%2520none%253B%250A%2520%2520%2520%2520position%253A%2520absolute%253B%250A%2520%2520%2520%2520background-color%253A%2520%2523f9f9f9%253B%250A%2520%2520%2520%2520min-width%253A%2520160px%253B%250A%2520%2520%2520%2520box-shadow%253A%25200px%25208px%252016px%25200px%2520rgba%280%252C0%252C0%252C0.2%29%253B%250A%2520%2520%2520%2520z-index%253A%25201%253B%250A%257D%250A.dropdown%253Ahover%2520.dropdown-content%2520%257B%250A%2520%2520%2520%2520display%253A%2520block%253B%250A%257D"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+        </div>
+
+        <p>
+          <ul>
+              <li><code>position: absolute</code>: Positions the dropdown content absolutely within its container.</li>
+              <li><code>list-style-type</code>: Sets a minimum width for the dropdown content.</li>
+              <li><code>overflow: hidden</code>: Adds a shadow effect for depth.</li>
+              <li><code>float: left</code>: Displays the dropdown content when hovering over the dropdown button.</li>
+          </ul>
+      </p>
+
+        <!-- Navbar-guide JavaScript Enchancements-->
+
+      <h3>JavaScript Enhancements</h3>
+      <p>For dynamic interaction, JavaScript can be used to toggle dropdown visibility on click:</p>
+
+      <div class="code_container container mb-5 rounded-3">
+        <div style="padding-bottom:20%; position:relative; display:block; width: 100%">
+            <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252F%2520JavaScript%2520Enhancements%250Adocument.querySelector%28%27.dropdown%27%29.addEventListener%28%27click%27%252C%2520function%28%29%2520%257B%250A%2520%2520%2520%2520this.querySelector%28%27.dropdown-content%27%29.classList.toggle%28%27show%27%29%253B%250A%257D%29%253B"
+                style="border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
       </div>
 
-      <div class="container mb-5">
-        <h3>Pure HTML/CSS Navbar:</h3>
-        <p>Once the HTML structure is in place, CSS is utilized to style the navbar according to the desired design and aesthetic preferences. This involves defining properties such as colors, fonts, spacing, alignment, and responsiveness. CSS selectors are used to target specific elements within the navbar and apply the desired styles.
-            Key considerations when designing a Pure HTML/CSS Navbar include: <br> <br>
-            
-            1. Accessibility: Ensuring that navigation links are clearly visible and easily accessible to all users, including those using assistive technologies like screen readers. <br> <br>
-            
-            2. Responsive Design: Designing the navbar to adapt gracefully to different screen sizes and devices, utilizing techniques such as media queries to adjust layout and styling accordingly. <br> <br>
-            
-            3. Usability: Prioritizing user experience by organizing navigation links logically, keeping the navbar concise and clutter-free, and providing visual cues for hover and active states. <br> <br>
-            
-            4. Customization: Leveraging CSS to customize the appearance of the navbar, including background colors, text styles, hover effects, and transitions, to align with the overall design theme of the website. <br> <br>
-            
-            5. Cross-Browser Compatibility: Testing the navbar across different web browsers to ensure consistent rendering and functionality, addressing any compatibility issues that may arise. <br> <br>
-            
-            By mastering the creation of a Pure HTML/CSS Navbar, web developers gain valuable skills in web design and front-end development, empowering them to build lightweight, customizable, and aesthetically pleasing navigation bars tailored to the specific needs of their projects.</p>
+
+      <p>
+        <ul>
+            <li><code>querySelector</code>: Selects the dropdown element.</li>
+            <li><code>addEventListener</code>: Adds an event listener for the 'click' event.</li>
+            <li><code>classList.toggle</code>: Toggles the 'show' class on the dropdown content.</li>
+        </ul>
+      </p>
+
+        <!-- Navbar-guide Accessibility Considerations-->
+
+      <h3>Accessibility Considerations</h3>
+      <p>Accessibility is crucial for ensuring that your navigation bar is usable by everyone, including those with disabilities. Use ARIA roles and properties to enhance accessibility:</p>
+
+      <div class="code_container container mb-5 rounded-3">
+        <div style="padding-bottom:25%; position:relative; display:block; width: 100%">
+            <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Accessibility%2520Considerations%2520%28This%2520is%2520placed%2520inside%2520body%29%2520--%253E%250A%2520%2520%2520%2520%253Cnav%2520role%253D%2522navigation%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cul%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%253E%253Ca%2520href%253D%2522%2523home%2522%2520aria-label%253D%2522Home%2522%253EHome%253C%252Fa%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253C%21--%2520other%2520links%2520--%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Ful%253E%250A%2520%2520%2520%2520%253C%252Fnav%253E"
+                style="border:0; transform: scale(1); overflow:hidden;"
+                sandbox="allow-scripts allow-same-origin">
+            </iframe>
+          </div>
       </div>
 
 
+      <p>
+        <ul>
+            <li><code>role="navigation</code>: Defines the section as a navigation region.</li>
+            <li><code>aria-label</code>: Provides an accessible name for the link.</li>
+        </ul>
+      </p>
 
 
+    </div>
 
       <!-- ELABORATION SECTION 2 -->
 
       <div class="about w-100 py-5 mb-5">
         <div class="container">
-            <h3 class="mb-3">Combination of HTML/CSS/JavaScript:</h3>
-            <p>Each approach has its pros and cons, so the choice depends on factors such as the complexity of your design, your familiarity with different technologies, and the specific features you need for your navbar. Experimenting with different methods can help you find the best solution for your website. <br> <br>
 
-                1. The navbar, short for navigation bar, is a specific type of UI component typically placed within the header of a website. <br> <br>
-                
-                2. It serves as a navigational tool, providing links or buttons for users to easily access different sections or pages of the website. <br> <br>
-                
-                3. Navbars are often designed horizontally across the top of the page, but they can also be vertical or collapsible/mobile-friendly depending on the design and layout of the website. <br> <br>
-                
-                4. Navbars can be created using various methods, including pure HTML/CSS, front-end frameworks, CSS Flexbox, CSS Grid, JavaScript for enhanced functionality, or a combination of these approaches. <br> <br>
-                
-                5. Key considerations when designing a navbar include clarity of navigation, ease of use, responsiveness for different screen sizes, and alignment with overall website design and branding.</p>
+          <!-- Navbar-guide Examples-->
 
+            <h3 class="mb-3">Examples</h3>
+            <p>Explore different styles of navigation bars and download ready-to-use templates to get started quickly: <br> 
+              <ul>
+                <li>Horizontal Navbars</li>
+                <li>Vertical Navbars</li>
+                <li>Fixed and Sticky Navbars</li>
+              </ul>
+            </p>
         </div>
+
+        <div class="container">
+
+          <!-- Navbar-guide Troubleshooting-->
+
+          <h3 class="mb-3">Troubleshooting</h3>
+          <p>Having trouble with your navigation bar? Here are solutions to common issues: <br> 
+            <ul>
+              <li>Links not aligning correctly: Check your CSS float and padding values.</li>
+              <li>Dropdown not working: Ensure JavaScript is properly linked and debug any errors.</li>
+              <li>Responsive design issues: Verify your media queries are correctly set up.</li>
+            </ul>
+          </p>
+      </div>
+
+      <div class="container">
+
+        <!-- Navbar-guide Conclusion-->
+
+        <h3 class="mb-3">Conclusion</h3>
+        <p>Having trouble with your navigation bar? Here are solutions to common issues: <br> 
+          In this guide, we've covered the essentials and advanced features of creating a navigation bar. By following these steps, you can build a user-friendly and visually appealing navbar for your website. Ready for more? Check out our next topic on building responsive layouts and further enhance your web design skills!
+        </p>
+    </div>
+
       </div>
 
         <img id="navbar-image" class="mb-5" src="images/navbar-example.png" alt="">
@@ -179,7 +273,8 @@
       <!-- VIDEO SECTION -->
 
       <div class="container">
-        <h1 class="text-center mb-5">VIDEO GUIDE</h1>
+        <h1 class="text-center mb-3">VIDEO GUIDE</h1>
+        <h3 class="text-center mb-5">Another way to code it</h3>
       </div>
 
       <div class="container">

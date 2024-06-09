@@ -23,76 +23,78 @@
     <!-- NAVBAR SECTION -->
 
     <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img style="width: 20lvh;" src="images/logo.png" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Guides
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
-                  <li><a class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
-                  <li><a class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="index.html">Other guides</a></li>
-                </ul>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html">About us</a>
-              </li>
-              </li>
-            </ul>
-          </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img style="width: 20lvh;" src="images/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a id="navbar_home" class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Guides</a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a id="navbar_navbar" class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
+                <li><a id="navbar_carousel" class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
+                <li><a id="navbar_hosting" class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a id="navbar_other" class="dropdown-item" href="index.html">Other guides</a></li>
+              </ul>
+            <li class="nav-item">
+              <a id="navbar_about" class="nav-link active" aria-current="page" href="about.html">About us</a>
+            </li>
+
+            <button class="lang-button-eng mx-1" onclick="changeLanguage('en')"></button>
+            <button class="lang-button-dk mx-1" onclick="changeLanguage('dk')"></button>
+            
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
 
       <!-- HEADLINE SECTION -->
 
       <div class="container mt-5 mb-5">
-        <h1 class="text-center">CAROUSEL</h1>
-        <p>Welcome to our guide on how to code a carousel! A carousel, also known as a slider, is a rotating set of images or content that can add a dynamic and interactive element to your website. This tutorial will walk you through creating a simple, functional carousel using HTML, CSS, and JavaScript.</p>
+        <h1 id="headline_heading" class="text-center">CAROUSEL</h1>
+        <p id="headline_text">Welcome to our guide on how to code a carousel! A carousel, also known as a slider, is a rotating set of images or content that can add a dynamic and interactive element to your website. This tutorial will walk you through creating a simple, functional carousel using HTML, CSS, and JavaScript.</p>
     </div>
 
 
       <!-- ELABORATION SECTION 1 -->
 
       <div class="container mb-3">
-        <h1 class="text-center">ELABORATION</h1>
+        <h1 id="elaboration_heading" class="text-center">ELABORATION</h1>
 
         <!-- Carousel-guide prereq -->
-        <h3>Prerequisites</h3>
-        <p>
-          Before we start, ensure you have the following skills and tools:
+        <h3 id="prereq_heading">Prerequisites</h3>
+        <p id="prereq_text">
+          Before we start, ensure you have the following skills and tools:</p>
 
                 <!-- Carousel-guide Skills Required-->
-          <h5>Skills Required:</h5>
-            <li>Basic knowledge of HTML, CSS, and JavaScript.</li> <br>
+          <h5 id="skills_subheading">Skills Required:</h5>
+            <li id="skills_text">Basic knowledge of HTML, CSS, and JavaScript.</li> <br>
 
                 <!-- Carousel-guide Tools and Libaries-->
-          <h5>Tools and Libraries:</h5>
-            <li>A text editor (e.g., VS Code, Sublime Text).</li>
-            <li>Basic understanding of web development.</li>
+          <h5 id="tools_subheading">Tools and Libraries:</h5>
+            <li id="tools_list1">A text editor (e.g., VS Code, Sublime Text).</li>
+            <li id="tools_list2">Basic understanding of web development.</li>
             <br>
-      </p>
+      
 
 
         <!-- Carousel-guide Setting up the enviroment-->
-        <h3>Setting Up the Environment</h3><br>
-        <h5>Project Structure</h5>
-        <p>
+        <h3 id="enviroment_heading">Setting Up the Environment</h3><br>
+        <h5 id="enviroment_subheading">Project Structure</h5>
+        <p id="enviroment_text">
           Create a new folder for your project and organize it as follows:
           <img id="carousel-image" class="mb-5" src="images/carousel_structure.png" alt="">
           </p>
-          <h5>HTML Boilerplate</h5>
-            <li>Start by setting up a basic HTML structure in index.html:</li> <br>
+          <h5 id="boiler_subheading">HTML Boilerplate</h5>
+            <li id="boiler_text">Start by setting up a basic HTML structure in index.html:</li> <br>
 
             <div class="code_container container mb-5 rounded-3">
                 <div style="padding-bottom:29%; position:relative; display:block; width: 100%">
@@ -105,9 +107,9 @@
 
 
           <!-- Carousel-guide HTML Markup-->
-          <h3>HTML Markup</h3>
-          <h5>Creating the Carousel Structure</h5>
-          <p>Add the following HTML inside the <code>&lt;body&gt;</code> tags to define the structure of the carousel:</p>
+          <h3 id="markup_heading">HTML Markup</h3>
+          <h5 id="markup_subheading">Creating the Carousel Structure</h5>
+          <p id="markup_text">Add the following HTML inside the <code>&lt;body&gt;</code> tags to define the structure of the carousel:</p>
 
           <div class="code_container container mb-5 rounded-3">
             <div style="padding-bottom:56%; position:relative; display:block; width: 100%">
@@ -119,9 +121,9 @@
         </div>
 
           <!-- Carousel-guide Styling with CSS-->
-          <h3>Styling with CSS</h3>
-          <h5>Basic Styles</h5>
-          <p>Create a styles.css file and add the following CSS to style the carousel:</p>
+          <h3 id="styling_heading">Styling with CSS</h3>
+          <h5 id="styling_subheading">Basic Styles</h5>
+          <p id="styling_text">Create a styles.css file and add the following CSS to style the carousel:</p>
 
           <div class="code_container container mb-5 rounded-3">
             <div style="padding-bottom:75%; position:relative; display:block; width: 100%">
@@ -134,9 +136,9 @@
 
 
           <!-- Carousel-guide Adding JavaScript Functionality-->
-          <h3>Adding JavaScript Functionality</h3>
-          <h5>Basic Functionality</h5>
-          <p>Create a script.js file and add the following JavaScript to handle the carousel functionality:</p>
+          <h3 id="functionality_heading">Adding JavaScript Functionality</h3>
+          <h5 id="functionality_subheading">Basic Functionality</h5>
+          <p id="functionality_text">Create a script.js file and add the following JavaScript to handle the carousel functionality:</p>
 
           <div class="code_container container mb-5 rounded-3">
             <div style="padding-bottom:44%; position:relative; display:block; width: 100%">
@@ -149,9 +151,9 @@
 
 
           <!-- Carousel-guide Enhancements-->
-          <h3>Enhancements</h3>
-          <h5>Auto-Sliding</h5>
-          <p>To add auto-sliding functionality, modify your JavaScript as follows:</p>
+          <h3 id="enhancements_heading">Enhancements</h3>
+          <h5 id="enhancements_subheading">Auto-Sliding</h5>
+          <p id="enhancements_text">To add auto-sliding functionality, modify your JavaScript as follows:</p>
 
           <div class="code_container container mb-5 rounded-3">
             <div style="padding-bottom:44%; position:relative; display:block; width: 100%">
@@ -163,9 +165,9 @@
           </div>
 
 
-          <h5>Indicators</h5>
-          <p>Add indicators for each slide and update your HTML and JavaScript:</p>
-          <p>Html:</p>
+          <h5 id="indicators_heading">Indicators</h5>
+          <p id="indicators_text">Add indicators for each slide and update your HTML and JavaScript:</p>
+          <p id="indicators_html_title">Html:</p>
 
           <div class="code_container container mb-5 rounded-3">
             <div style="padding-bottom:23%; position:relative; display:block; width: 100%">
@@ -176,7 +178,7 @@
               </div>
           </div>
 
-          <p>JavaScript:</p>
+          <p id="indicators_javascript_title">JavaScript:</p>
 
           <div class="code_container container mb-5 rounded-3">
             <div style="padding-bottom:23%; position:relative; display:block; width: 100%">
@@ -188,12 +190,12 @@
           </div>
 
           <!-- Carousel-guide Advanced Features-->
-          <h3>Advanced Features</h3>
-          <h5>Using a Library</h5>
-          <p>For more advanced carousels, consider using libraries like Slick, Swiper, or Bootstrap. Here’s a brief example using Bootstrap’s carousel component:
+          <h3 id="advanced_heading">Advanced Features</h3>
+          <h5 id="advanced_subheading">Using a Library</h5>
+          <p id="advanced_text">For more advanced carousels, consider using libraries like Slick, Swiper, or Bootstrap. Here’s a brief example using Bootstrap’s carousel component:
           </p>
-          <h5>1. Include Bootstrap:</h5>
-          <p>Add the following in the <code>&lt;head&gt;</code> section of your HTML file:</p>
+          <h5 id="advanced_1_subheading">1. Include Bootstrap:</h5>
+          <p id="advanced_1_text">Add the following in the <code>&lt;head&gt;</code> section of your HTML file:</p>
 
           <div class="code_container container mb-5 rounded-3">
             <div style="padding-bottom:22%; position:relative; display:block; width: 100%">
@@ -205,7 +207,7 @@
           </div>
 
 
-          <h5>2. Bootstrap Carousel Markup:</h5>
+          <h5 id="advanced_2_subheading">2. Bootstrap Carousel Markup:</h5>
 
           <div class="code_container container mb-5 rounded-3">
             <div style="padding-bottom:54%; position:relative; display:block; width: 100%">
@@ -217,7 +219,7 @@
           </div>
 
           <!-- Carousel-guide What the final code should look like-->
-          <h2 class="text-center mb-3">What the final code should look like with bootstrap</h2>
+          <h2 id="should_heading" class="text-center mb-3">What the final code should look like with bootstrap</h2>
 
           <div class="code_container container mb-5 rounded-3">
             <div style="padding-bottom:100%; position:relative; display:block; width: 100%">
@@ -233,18 +235,18 @@
 
       <div class="about w-100 py-5 mb-5">
         <div class="container">
-          <h3 class="mb-3">Troubleshooting</h3>
-          <h5>Common issues</h5>
-         <li>Images not displaying:</li>
-         <p>Ensure the image paths are correct and the images are in the appropriate directory.</p>
-         <li>Carousel not sliding:</li>
-         <p>Check for JavaScript errors in the console and ensure all event listeners are correctly attached.</p>
-         <h5>Debugging Tips</h5>
-         <li>Use browser developer tools to inspect the carousel elements and check for CSS or JavaScript issues.</li>
-         <li>Log JavaScript variables and events to the console to trace the flow of your code.</li>
+          <h3 id="troubleshooting_heading" class="mb-3">Troubleshooting</h3>
+          <h5 id="common_subheading">Common issues</h5>
+         <li id="common_point_1">Images not displaying:</li>
+         <p id="common_text_1">Ensure the image paths are correct and the images are in the appropriate directory.</p>
+         <li id="common_point_2">Carousel not sliding:</li>
+         <p id="common_text_2">Check for JavaScript errors in the console and ensure all event listeners are correctly attached.</p>
+         <h5 id="debug_subheading">Debugging Tips</h5>
+         <li id="debug_point_1">Use browser developer tools to inspect the carousel elements and check for CSS or JavaScript issues.</li>
+         <li id="debug_point_2">Log JavaScript variables and events to the console to trace the flow of your code.</li>
          <br>
-         <h3>Conclusion</h3>
-         <p>Congratulations! You have successfully created a functional carousel. This guide covered the basics of setting up the HTML, CSS, and JavaScript for a simple carousel, as well as some enhancements to make it more interactive.</p>
+         <h3 id="conclusion_heading">Conclusion</h3>
+         <p id="conclusion_text">Congratulations! You have successfully created a functional carousel. This guide covered the basics of setting up the HTML, CSS, and JavaScript for a simple carousel, as well as some enhancements to make it more interactive.</p>
         </div>
       </div>
 
@@ -253,8 +255,8 @@
       <!-- VIDEO SECTION -->
 
       <div class="container">
-        <h1 class="text-center mb-3">VIDEO GUIDE</h1>
-        <h3 class="text-center mb-5">Another way to code it</h3>
+        <h1 id="video_heading" class="text-center mb-3">VIDEO GUIDE</h1>
+        <h3 id="video_subheading" class="text-center mb-5">Another way to code it</h3>
       </div>
 
       <div class="container">
@@ -271,10 +273,11 @@
 
       <div class="container my-5">
         <div class="quiz w-100 py-5 rounded-3">
-                <h3 class="mb-3 px-5">Want to test yourself? <br>
+                <h3 id="quiz_heading" class="mb-3 px-5">Want to test yourself? <br>
                     Take our quiz here!</h3>
-                    <button class="mx-5"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeG7waVUPSOo1knU2PN5hnUKNpuMGR3UHAaNuXa-iKwUBMpBA/viewform?usp=sf_link" target="_blank">Quiz yourself</a></button>
+                    <button class="mx-5"><a id="quiz_subheading" href="https://docs.google.com/forms/d/e/1FAIpQLSeG7waVUPSOo1knU2PN5hnUKNpuMGR3UHAaNuXa-iKwUBMpBA/viewform?usp=sf_link" target="_blank">Quiz yourself</a></button>
           </div>
+      </div>
       </div>
 
       
@@ -291,7 +294,7 @@
             <h5>© 2024 Girlcode</h5>
         </div>
         <div class="container d-flex justify-content-center">
-            <p>Follow us on social media:</p>
+            <p id="footer_text">Follow us on social media:</p>
         </div>
         <div class="container d-flex justify-content-center pb-5">
           <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
@@ -310,7 +313,8 @@
       </footer>
     
 
-    <!-- Optional JavaScript; choose one of the two! -->
+         <!-- Optional JavaScript; choose one of the two! -->
+      <script src="javascript/carousel_script.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

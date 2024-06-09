@@ -31,22 +31,24 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a id="navbar_home" class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Guides
-                </a>
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Guides</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
-                  <li><a class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
-                  <li><a class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
+                  <li><a id="navbar_navbar" class="dropdown-item" href="navbar-guide.html">Navigation bar</a></li>
+                  <li><a id="navbar_carousel" class="dropdown-item" href="carousel-guide.html">Carousel</a></li>
+                  <li><a id="navbar_hosting" class="dropdown-item" href="hosting-guide.html">Hosting</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="index.html">Other guides</a></li>
+                  <li><a id="navbar_other" class="dropdown-item" href="index.html">Other guides</a></li>
                 </ul>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="about.html">About us</a>
+                <a id="navbar_about" class="nav-link active" aria-current="page" href="about.html">About us</a>
               </li>
+
+              <button class="lang-button-eng mx-1" onclick="changeLanguage('en')"></button>
+              <button class="lang-button-dk mx-1" onclick="changeLanguage('dk')"></button>
+              
               </li>
             </ul>
           </div>
@@ -58,7 +60,7 @@
 
       <div class="container mt-5 mb-5">
         <h1 class="text-center">HOSTING</h1>
-        <p>In the digital landscape, establishing an online presence is pivotal for businesses and individuals alike. When it comes to launching a website, one crucial decision is whether to self-host or utilize a web hosting service. Each approach has its merits and considerations, catering to diverse needs and preferences.</p>
+        <p id="headline_text">In the digital landscape, establishing an online presence is pivotal for businesses and individuals alike. When it comes to launching a website, one crucial decision is whether to self-host or utilize a web hosting service. Each approach has its merits and considerations, catering to diverse needs and preferences.</p>
     </div>
 
     <!-- TEXT SECTION 1 -->
@@ -67,26 +69,14 @@
         <div class="container">
             <div class="row">
               <div class="col">
-                <h2>Self hosting</h2>
-                <h5>Self-hosting involves managing and maintaining your website's infrastructure independently. Here are some key aspects to consider:</h5>
-                <p>1. Total Control: With self-hosting, you have complete control over your website's environment. You can customize server configurations, install any software you require, and have unrestricted access to server resources. <br> <br>
-                    
-                    2. Scalability: Self-hosting offers scalability tailored to your needs. You can upgrade server resources as your website grows without being constrained by predefined hosting plans. <br> <br>
-                    
-                    3. Cost Considerations: While self-hosting may seem cost-effective initially, it requires investments in hardware, software licenses, and ongoing maintenance. It's essential to evaluate long-term expenses against the benefits of autonomy. <br> <br>
-                    
-                    4. Technical Expertise: Self-hosting demands technical proficiency to set up servers, configure security measures, and troubleshoot issues. It's ideal for individuals or businesses with IT expertise or those willing to invest time in learning server management.</p>
+                <h2 id="text_heading1">Self hosting</h2>
+                <h5 id="text_subheading1">Self-hosting involves managing and maintaining your website's infrastructure independently. Here are some key aspects to consider:</h5>
+                <p id="text_text1">1. Total Control: With self-hosting, you have complete control over your website's environment. You can customize server configurations, install any software you require, and have unrestricted access to server resources. <br> <br> 2. Scalability: Self-hosting offers scalability tailored to your needs. You can upgrade server resources as your website grows without being constrained by predefined hosting plans. <br> <br> 3. Cost Considerations: While self-hosting may seem cost-effective initially, it requires investments in hardware, software licenses, and ongoing maintenance. It's essential to evaluate long-term expenses against the benefits of autonomy. <br> <br> 4. Technical Expertise: Self-hosting demands technical proficiency to set up servers, configure security measures, and troubleshoot issues. It's ideal for individuals or businesses with IT expertise or those willing to invest time in learning server management.</p>
               </div>
               <div class="col">
-                <h2>Complete hosting services</h2>
-                <h5>Web hosting services provide infrastructure and support for hosting websites on remote servers. Here's what you should know about this option:</h5>
-                <p>1. Convenience: Web hosting services offer a hassle-free solution, handling server management, security updates, and technical support. This frees you from the complexities of server administration, allowing you to focus on website content and functionality. <br> <br>
-
-                    2. Cost Structure: Web hosting services typically offer tiered pricing plans based on resource allocation and features. This makes it easy to choose a plan that aligns with your website's requirements and budget, without upfront investments in hardware or software. <br> <br>
-                    
-                    3. Reliability and Security: Reputable web hosting providers ensure high uptime rates and robust security measures, safeguarding your website against potential threats. They employ professional monitoring and backup systems, minimizing the risk of data loss or downtime. <br> <br>
-                    
-                    4. Limited Control: While web hosting services offer convenience, they come with limitations in customization and control compared to self-hosting. Advanced configurations may be restricted, and you rely on the provider's infrastructure and policies.</p>
+                <h2 id="text_heading2">Complete hosting services</h2>
+                <h5 id="text_subheading2">Web hosting services provide infrastructure and support for hosting websites on remote servers. Here's what you should know about this option:</h5>
+                <p id="text_text2">1. Convenience: Web hosting services offer a hassle-free solution, handling server management, security updates, and technical support. This frees you from the complexities of server administration, allowing you to focus on website content and functionality. <br> <br> 2. Cost Structure: Web hosting services typically offer tiered pricing plans based on resource allocation and features. This makes it easy to choose a plan that aligns with your website's requirements and budget, without upfront investments in hardware or software. <br> <br> 3. Reliability and Security: Reputable web hosting providers ensure high uptime rates and robust security measures, safeguarding your website against potential threats. They employ professional monitoring and backup systems, minimizing the risk of data loss or downtime. <br> <br> 4. Limited Control: While web hosting services offer convenience, they come with limitations in customization and control compared to self-hosting. Advanced configurations may be restricted, and you rely on the provider's infrastructure and policies.</p>
               </div>
             </div>
           </div>
@@ -95,8 +85,8 @@
       <!-- TEXT SECTION 2 -->
 
       <div class="container mb-5">
-        <h2>Choosing the right path for you:</h2>
-        <p>The decision between self-hosting and using a web hosting service hinges on various factors, including technical proficiency, budget, scalability needs, and desired level of control. Consider your priorities, long-term goals, and resources available before making a choice.
+        <h2 id="text2_heading">Choosing the right path for you:</h2>
+        <p id="text2_text">The decision between self-hosting and using a web hosting service hinges on various factors, including technical proficiency, budget, scalability needs, and desired level of control. Consider your priorities, long-term goals, and resources available before making a choice.
             For tech-savvy individuals or businesses seeking autonomy and flexibility, self-hosting may be the preferred option. Conversely, those prioritizing convenience, reliability, and support may find web hosting services more suitable.
             Ultimately, both self-hosting and web hosting services offer viable pathways to establish and maintain a successful online presence. By weighing the pros and cons of each approach, you can make an informed decision that aligns with your website's objectives and requirements.</p>
       </div>
@@ -110,8 +100,8 @@
                 <div class="card mb-5 mx-5">
                     <div class="card-body">
                         <img class="w-100" src="images/nginx.png" alt="">
-                        <h2 class="card-title pt-4 pb-3">Self hosting software</h2>
-                        <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui nam aspernatur eum inventore autem magni eligendi rerum nulla iusto deserunt repellendus officiis, illo recusandae et aliquam corporis? Nesciunt, recusandae!</p>
+                        <h2 id="card_heading1" class="card-title pt-4 pb-3">Self hosting software</h2>
+                        <p id="card_text1" class="card-text mb-5">Self-hosting software refers to the practice of running applications and services on your own infrastructure rather than relying on third-party providers. This approach offers greater control, privacy, and flexibility, allowing individuals and organizations to tailor their setups to specific needs. From email servers to content management systems and collaborative tools, self-hosting software empowers users to manage their digital presence autonomously. However, it requires technical expertise for setup, maintenance, and security, making it best suited for those with IT skills or a willingness to learn.</p>
                     </div>
                 </div>
             </div>
@@ -120,8 +110,8 @@
                 <div class="card mb-5 mx-5">
                     <div class="card-body">
                         <img class="w-100" src="images/one-com.png" alt="">
-                        <h2 class="card-title pt-4 pb-3">Web based hosting solutions</h2>
-                        <p class="card-text mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui nam aspernatur eum inventore autem magni eligendi rerum nulla iusto deserunt repellendus officiis, illo recusandae et aliquam corporis? Nesciunt, recusandae!</p>
+                        <h2 id="card_heading2" class="card-title pt-4 pb-3">Web based hosting solutions</h2>
+                        <p id="card_text2" class="card-text mb-5">Web-based hosting solutions provide an efficient way to host services and applications on the internet. These solutions are ideal for individuals and businesses looking to establish an online presence without the need to maintain their own server infrastructure. With web-based hosting services, users can create and manage their websites, applications, and databases through user-friendly control panels and tools. Additionally, these solutions often offer security, reliability, and technical support, making them suitable for both beginners and experienced webmasters. From shared hosting to dedicated servers and cloud hosting, there are web-based hosting solutions available for every type of project and need.</p>
                     </div>
                 </div>
             </div>
@@ -131,16 +121,10 @@
       <!-- ELABORATION SECTION 1 -->
 
       <div class="container mb-5">
-        <h1 class="text-center">ELABORATION</h1>
-        <h3>Self hosting software</h3>
-        <p>Self-hosting involves managing and maintaining your website's infrastructure independently. Here are some key aspects to consider:</p>
-        <p class="mb-5">1. Total Control: With self-hosting, you have complete control over your website's environment. You can customize server configurations, install any software you require, and have unrestricted access to server resources. <br> <br>
-
-            2. Scalability: Self-hosting offers scalability tailored to your needs. You can upgrade server resources as your website grows without being constrained by predefined hosting plans. <br> <br>
-            
-            3. Cost Considerations: While self-hosting may seem cost-effective initially, it requires investments in hardware, software licenses, and ongoing maintenance. It's essential to evaluate long-term expenses against the benefits of autonomy. <br> <br>
-            
-            4. Technical Expertise: Self-hosting demands technical proficiency to set up servers, configure security measures, and troubleshoot issues. It's ideal for individuals or businesses with IT expertise or those willing to invest time in learning server management.</p>
+        <h1 id="elaboration_heading" class="text-center">ELABORATION</h1>
+        <h3 id="elaboration_subheading">Self hosting software</h3>
+        <p id="elaboration_text1">Self-hosting involves managing and maintaining your website's infrastructure independently. Here are some key aspects to consider:</p>
+        <p id="elaboration_text2" class="mb-5">1. Total Control: With self-hosting, you have complete control over your website's environment. You can customize server configurations, install any software you require, and have unrestricted access to server resources. <br> <br> 2. Scalability: Self-hosting offers scalability tailored to your needs. You can upgrade server resources as your website grows without being constrained by predefined hosting plans. <br> <br> 3. Cost Considerations: While self-hosting may seem cost-effective initially, it requires investments in hardware, software licenses, and ongoing maintenance. It's essential to evaluate long-term expenses against the benefits of autonomy. <br> <br> 4. Technical Expertise: Self-hosting demands technical proficiency to set up servers, configure security measures, and troubleshoot issues. It's ideal for individuals or businesses with IT expertise or those willing to invest time in learning server management.</p>
 
 
       </div>
@@ -150,22 +134,16 @@
       <!-- ELABORATION SECTION 2 -->
 
       <div class="container mb-5">
-        <h1 class="text-center">WEB HOSTING SERVICES</h1>
+        <h1 id="elaboration2_heading" class="text-center">WEB HOSTING SERVICES</h1>
       </div>
 
       <div class="about w-100 py-5 mb-5">
         <div class="container">
-            <h3 class="mb-3">Web hosting services provide infrastructure and support for hosting websites on remote servers. Here's what you should know about this option:</h3>
-            <p>1. Convenience: Web hosting services offer a hassle-free solution, handling server management, security updates, and technical support. This frees you from the complexities of server administration, allowing you to focus on website content and functionality. <br> <br>
+            <h3 id="elaboration2_subheading1" class="mb-3">Web hosting services provide infrastructure and support for hosting websites on remote servers. Here's what you should know about this option:</h3>
+            <p id="elaboration2_text1">1. Convenience: Web hosting services offer a hassle-free solution, handling server management, security updates, and technical support. This frees you from the complexities of server administration, allowing you to focus on website content and functionality. <br> <br> 2. Cost Structure: Web hosting services typically offer tiered pricing plans based on resource allocation and features. This makes it easy to choose a plan that aligns with your website's requirements and budget, without upfront investments in hardware or software. <br> <br> 3. Reliability and Security: Reputable web hosting providers ensure high uptime rates and robust security measures, safeguarding your website against potential threats. They employ professional monitoring and backup systems, minimizing the risk of data loss or downtime. <br> <br> 4. Limited Control: While web hosting services offer convenience, they come with limitations in customization and control compared to self-hosting. Advanced configurations may be restricted, and you rely on the provider's infrastructure and policies.</p>
 
-                2. Cost Structure: Web hosting services typically offer tiered pricing plans based on resource allocation and features. This makes it easy to choose a plan that aligns with your website's requirements and budget, without upfront investments in hardware or software. <br> <br>
-                
-                3. Reliability and Security: Reputable web hosting providers ensure high uptime rates and robust security measures, safeguarding your website against potential threats. They employ professional monitoring and backup systems, minimizing the risk of data loss or downtime. <br> <br>
-                
-                4. Limited Control: While web hosting services offer convenience, they come with limitations in customization and control compared to self-hosting. Advanced configurations may be restricted, and you rely on the provider's infrastructure and policies.</p>
-
-            <h3 class="mb-3 mt-5">Choosing the Right Path:</h3>
-            <p>The decision between self-hosting and using a web hosting service hinges on various factors, including technical proficiency, budget, scalability needs, and desired level of control. Consider your priorities, long-term goals, and resources available before making a choice.
+            <h3 id="elaboration2_subheading2" class="mb-3 mt-5">Choosing the Right Path:</h3>
+            <p id="elaboration2_text2">The decision between self-hosting and using a web hosting service hinges on various factors, including technical proficiency, budget, scalability needs, and desired level of control. Consider your priorities, long-term goals, and resources available before making a choice.
                 For tech-savvy individuals or businesses seeking autonomy and flexibility, self-hosting may be the preferred option. Conversely, those prioritising convenience, reliability, and support may find web hosting services more suitable.
                 Ultimately, both self-hosting and web hosting services offer viable pathways to establish and maintain a successful online presence. By weighing the pros and cons of each approach, you can make an informed decision that aligns with your website's objectives and requirements.</p>
         </div>
@@ -193,7 +171,7 @@
             <h5>© 2024 Girlcode</h5>
         </div>
         <div class="container d-flex justify-content-center">
-            <p>Follow us on social media:</p>
+            <p id="footer_text">Follow us on social media:</p>
         </div>
         <div class="container d-flex justify-content-center pb-5">
           <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #ffffff00; border-color: #ffffff00; color: #006798;">
@@ -213,6 +191,7 @@
     
 
     <!-- Optional JavaScript; choose one of the two! -->
+    <script src="javascript/hosting_script.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

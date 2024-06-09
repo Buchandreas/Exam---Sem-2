@@ -42,6 +42,28 @@ h1 {
     background-color: #FFE9EC;
 }
 
+/* HOSTING GUIDE */
+
+#text_text1 {
+    white-space: pre-line;
+}
+
+#text_text2 {
+    white-space: pre-line;
+}
+
+#elaboration_text2 {
+    white-space: pre-line;
+}
+
+#elaboration2_text1 {
+    white-space: pre-line;
+}
+
+#quiz_heading {
+    white-space: pre-line;
+}
+
 
 
 

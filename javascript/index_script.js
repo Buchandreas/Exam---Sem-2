@@ -48,7 +48,7 @@
 
                 video_heading: "HVAD VI KAN GØRE FOR DIG",
 
-                footer_text: "Følg os på sociale medier",
+                footer_text: "Følg os på sociale medier"
             }
         };
  

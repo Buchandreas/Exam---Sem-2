@@ -42,7 +42,9 @@
                 contact_heading: "KONTAKT OS",
                 contact_subheading: "Har du spørgsmål? Kontakt os!",
                 contact_email: "Send os en email",
-                contact_phone: "Ring til os"
+                contact_phone: "Ring til os",
+
+                footer_text: "Følg os på sociale medier"
             }
         };
  
@@ -83,6 +85,8 @@
             contact_subheading.textContent = language.dk.contact_subheading;
             contact_email.textContent = language.dk.contact_email;
             contact_phone.textContent = language.dk.contact_phone;
+
+            footer_text.textContent = language.dk.footer_text;
             
 
             }

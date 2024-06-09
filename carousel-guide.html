@@ -58,117 +58,193 @@
 
       <div class="container mt-5 mb-5">
         <h1 class="text-center">CAROUSEL</h1>
-        <p>Carousels are versatile and dynamic components often found on websites, offering an engaging way to showcase multiple images or content pieces within a confined space. With their ability to cycle through items automatically or through user interaction, carousels provide an effective means of highlighting key features, promotions, or portfolios. In this introduction, we'll explore the basics of creating and implementing carousels to enhance user experience and captivate audiences.</p>
+        <p>Welcome to our guide on how to code a carousel! A carousel, also known as a slider, is a rotating set of images or content that can add a dynamic and interactive element to your website. This tutorial will walk you through creating a simple, functional carousel using HTML, CSS, and JavaScript.</p>
     </div>
 
-    <!-- CARD SECTION -->
-
-    <div class="container justify-content-center">
-        <div class="row g-2 justify-content-center">
-
-            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-                <div class="card mb-5">
-                    <div class="card-body">
-                        <h5 class="card-title">Simple image carousel: <br> <br></h5>
-                        <p class="card-text">A basic carousel that allows users to navigate through a series of images using arrows or buttons. This is a classic approach to displaying images on a website.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-              <div class="card mb-5">
-                  <div class="card-body">
-                      <h5 class="card-title">Fullscreen image carousel: <br> <br></h5>
-                      <p class="card-text">A carousel that fills the entire screen and presents images on a large scale. This creates a more immersive visual experience and is ideal for showcasing impressive images or photographs.</p>
-                  </div>
-              </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-            <div class="card mb-5">
-                <div class="card-body">
-                    <h5 class="card-title">Thumbnail-based carousel: <br> <br></h5>
-                    <p class="card-text">A carousel that displays thumbnail images of each slide at the bottom or side of the screen. Users can click on the thumbnails to view the corresponding image in the main area.</p>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-            <div class="card mb-5">
-                <div class="card-body">
-                    <h5 class="card-title">Autoplay carousel with transition effects:</h5>
-                    <p class="card-text">A carousel that automatically transitions between images at regular intervals and includes smooth transition effects such as fade or slide. This adds dynamic movement to your website and captures users' attention.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-          <div class="card mb-5">
-              <div class="card-body">
-                  <h5 class="card-title">Responsive carousel with touch-swipe: <br> <br></h5>
-                  <p class="card-text">A carousel designed to work well on both computers and mobile devices, allowing users to swipe through images with their fingers on touchscreens.</p>
-              </div>
-          </div>
-      </div>
-
-      <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
-        <div class="card mb-5">
-            <div class="card-body">
-                <h5 class="card-title">Carousel with image captions and links: <br> <br></h5>
-                <p class="card-text">An advanced carousel that includes image captions and the option to add links to each slide. This allows you to provide additional information or highlight related pages or products on your website.</p>
-            </div>
-        </div>
-      </div>
-
-        </div>
-      </div>
 
       <!-- ELABORATION SECTION 1 -->
 
       <div class="container mb-3">
         <h1 class="text-center">ELABORATION</h1>
-        <h3>Simple image carousel:</h3>
-        <p>An image carousel is a popular feature on websites that allows you to display multiple images in a rotating slideshow format. Here's a step-by-step guide on how to create one:</p>
-      </div>
 
-      <div class="container mb-5">
-        
-        <p>1.  Choose a Website Building Platform: <br> <br>
+        <!-- Carousel-guide prereq -->
+        <h3>Prerequisites</h3>
+        <p>
+          Before we start, ensure you have the following skills and tools:
 
-            To create an image carousel, start by selecting a website building platform or content management system (CMS). These platforms often offer user-friendly tools and templates that make it easy to add features like image carousels without the need for coding knowledge. <br> <br>
-            
-            2. Select a Template with Image Carousel Functionality: <br> <br>
-            
-            Once you've chosen a website building platform, browse through the available templates or themes. Look for templates that include built-in support for image carousels. These templates usually have pre-designed sections or elements specifically for displaying a rotating slideshow of images. <br> <br>
-            
-            3. Customize Your Image Carousel: <br> <br>
-            
-            After selecting a template with image carousel functionality, you can begin customizing it to fit your needs. This typically involves uploading your own images to replace the default ones in the carousel. You may also have options to adjust settings such as the transition effects between slides, the speed of the slideshow, and whether it should autoplay or require manual navigation. <br> <br>
-            
-            4. Preview and Publish Your Website: <br> <br>
-            
-            Once you've customized your image carousel, preview your website to see how it looks and functions. Make any necessary adjustments to ensure everything looks just right. When you're satisfied with the result, you can publish your website to make it accessible to visitors on the internet.</p>
-      </div>
+                <!-- Carousel-guide Skills Required-->
+          <h5>Skills Required:</h5>
+            <li>Basic knowledge of HTML, CSS, and JavaScript.</li> <br>
+
+                <!-- Carousel-guide Tools and Libaries-->
+          <h5>Tools and Libraries:</h5>
+            <li>A text editor (e.g., VS Code, Sublime Text).</li>
+            <li>Basic understanding of web development.</li>
+            <br>
+      </p>
 
 
+        <!-- Carousel-guide Setting up the enviroment-->
+        <h3>Setting Up the Environment</h3><br>
+        <h5>Project Structure</h5>
+        <p>
+          Create a new folder for your project and organize it as follows:
+          <img id="carousel-image" class="mb-5" src="images/carousel_structure.png" alt="">
+          </p>
+          <h5>HTML Boilerplate</h5>
+            <li>Start by setting up a basic HTML structure in index.html:</li> <br>
 
+            <div class="code_container container mb-5 rounded-3">
+                <div style="padding-bottom:29%; position:relative; display:block; width: 100%">
+                    <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21DOCTYPE%2520html%253E%250A%253C%21--%2520HTML%2520Boilerplate%2520--%253E%250A%253Chtml%2520lang%253D%2522en%2522%253E%250A%253Chead%253E%250A%2520%2520%2520%2520%253Cmeta%2520charset%253D%2522UTF-8%2522%253E%250A%2520%2520%2520%2520%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1.0%2522%253E%250A%2520%2520%2520%2520%253Ctitle%253ECarousel%2520Example%253C%252Ftitle%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522styles.css%2522%253E%250A%253C%252Fhead%253E%250A%253Cbody%253E"
+                        style="border:0; transform: scale(1); overflow:hidden;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                  </div>
+            </div>
+
+
+          <!-- Carousel-guide HTML Markup-->
+          <h3>HTML Markup</h3>
+          <h5>Creating the Carousel Structure</h5>
+          <p>Add the following HTML inside the <code>&lt;body&gt;</code> tags to define the structure of the carousel:</p>
+
+          <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:56%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21DOCTYPE%2520html%253E%250A%253C%21--%2520HTML%2520Boilerplate%2520--%253E%250A%253Chtml%2520lang%253D%2522en%2522%253E%250A%253Chead%253E%250A%2520%2520%2520%2520%253Cmeta%2520charset%253D%2522UTF-8%2522%253E%250A%2520%2520%2520%2520%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1.0%2522%253E%250A%2520%2520%2520%2520%253Ctitle%253ECarousel%2520Example%253C%252Ftitle%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522styles.css%2522%253E%250A%253C%252Fhead%253E%250A%253Cbody%253E%250A%250A%253Cdiv%2520class%253D%2522carousel%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image1.jpg%2522%2520alt%253D%2522Image%25201%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image2.jpg%2522%2520alt%253D%2522Image%25202%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image3.jpg%2522%2520alt%253D%2522Image%25203%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522carousel-control-prev%2522%253E%2526lt%253B%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522carousel-control-next%2522%253E%2526gt%253B%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%2520src%253D%2522script.js%2522%253E%253C%252Fscript%253E%250A%253C%252Fbody%253E%250A%253C%252Fhtml%253E"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+        </div>
+
+          <!-- Carousel-guide Styling with CSS-->
+          <h3>Styling with CSS</h3>
+          <h5>Basic Styles</h5>
+          <p>Create a styles.css file and add the following CSS to style the carousel:</p>
+
+          <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:75%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F*%2520Styling%2520with%2520CSS%2520*%252F%250A%252F*%2520Basic%2520Styles%2520*%252F%250A.carousel%2520%257B%250A%2520%2520%2520%2520position%253A%2520relative%253B%250A%2520%2520%2520%2520width%253A%2520100%2525%253B%250A%2520%2520%2520%2520max-width%253A%2520600px%253B%250A%2520%2520%2520%2520margin%253A%2520auto%253B%250A%2520%2520%2520%2520overflow%253A%2520hidden%253B%250A%257D%250A%250A.carousel-item%2520%257B%250A%2520%2520%2520%2520display%253A%2520none%253B%250A%2520%2520%2520%2520width%253A%2520100%2525%253B%250A%257D%250A%250A.carousel-item.active%2520%257B%250A%2520%2520%2520%2520display%253A%2520block%253B%250A%257D%250A%250A.carousel%2520img%2520%257B%250A%2520%2520%2520%2520width%253A%2520100%2525%253B%250A%257D%250A%250A.carousel-control-prev%252C%2520.carousel-control-next%2520%257B%250A%2520%2520%2520%2520position%253A%2520absolute%253B%250A%2520%2520%2520%2520top%253A%252050%2525%253B%250A%2520%2520%2520%2520transform%253A%2520translateY%28-50%2525%29%253B%250A%2520%2520%2520%2520background-color%253A%2520rgba%280%252C0%252C0%252C0.5%29%253B%250A%2520%2520%2520%2520color%253A%2520white%253B%250A%2520%2520%2520%2520border%253A%2520none%253B%250A%2520%2520%2520%2520padding%253A%252010px%253B%250A%2520%2520%2520%2520cursor%253A%2520pointer%253B%250A%257D%250A%250A.carousel-control-prev%2520%257B%250A%2520%2520%2520%2520left%253A%252010px%253B%250A%257D%250A%250A.carousel-control-next%2520%257B%250A%2520%2520%2520%2520right%253A%252010px%253B%250A%257D"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+        </div>
+
+
+          <!-- Carousel-guide Adding JavaScript Functionality-->
+          <h3>Adding JavaScript Functionality</h3>
+          <h5>Basic Functionality</h5>
+          <p>Create a script.js file and add the following JavaScript to handle the carousel functionality:</p>
+
+          <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:44%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252FAdding%2520JavaScript%2520Functionality%250A%250A%252F%252FBasic%2520Functionality%250Aconst%2520nextButton%2520%253D%2520document.querySelector%28%27.carousel-control-next%27%29%253B%250Aconst%2520prevButton%2520%253D%2520document.querySelector%28%27.carousel-control-prev%27%29%253B%250Aconst%2520items%2520%253D%2520document.querySelectorAll%28%27.carousel-item%27%29%253B%250A%250Alet%2520currentIndex%2520%253D%25200%253B%250A%250AnextButton.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520items%255BcurrentIndex%255D.classList.remove%28%27active%27%29%253B%250A%2520%2520%2520%2520currentIndex%2520%253D%2520%28currentIndex%2520%252B%25201%29%2520%2525%2520items.length%253B%250A%2520%2520%2520%2520items%255BcurrentIndex%255D.classList.add%28%27active%27%29%253B%250A%257D%29%253B%250A%250AprevButton.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520items%255BcurrentIndex%255D.classList.remove%28%27active%27%29%253B%250A%2520%2520%2520%2520currentIndex%2520%253D%2520%28currentIndex%2520-%25201%2520%252B%2520items.length%29%2520%2525%2520items.length%253B%250A%2520%2520%2520%2520items%255BcurrentIndex%255D.classList.add%28%27active%27%29%253B%250A%257D%29%253B"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+          </div>
+
+
+          <!-- Carousel-guide Enhancements-->
+          <h3>Enhancements</h3>
+          <h5>Auto-Sliding</h5>
+          <p>To add auto-sliding functionality, modify your JavaScript as follows:</p>
+
+          <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:44%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252FBasic%2520Functionality%250Aconst%2520nextButton%2520%253D%2520document.querySelector%28%27.carousel-control-next%27%29%253B%250Aconst%2520prevButton%2520%253D%2520document.querySelector%28%27.carousel-control-prev%27%29%253B%250Aconst%2520items%2520%253D%2520document.querySelectorAll%28%27.carousel-item%27%29%253B%250A%250Alet%2520currentIndex%2520%253D%25200%253B%250A%250AnextButton.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520items%255BcurrentIndex%255D.classList.remove%28%27active%27%29%253B%250A%2520%2520%2520%2520currentIndex%2520%253D%2520%28currentIndex%2520%252B%25201%29%2520%2525%2520items.length%253B%250A%2520%2520%2520%2520items%255BcurrentIndex%255D.classList.add%28%27active%27%29%253B%250A%257D%29%253B%250A%250AprevButton.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520items%255BcurrentIndex%255D.classList.remove%28%27active%27%29%253B%250A%2520%2520%2520%2520currentIndex%2520%253D%2520%28currentIndex%2520-%25201%2520%252B%2520items.length%29%2520%2525%2520items.length%253B%250A%2520%2520%2520%2520items%255BcurrentIndex%255D.classList.add%28%27active%27%29%253B%250A%257D%29%253B%250A%250A%252F%252FEnhancements%250A%250A%252F%252FAuto-Sliding%250Alet%2520autoSlideInterval%2520%253D%2520setInterval%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520nextButton.click%28%29%253B%250A%257D%252C%25203000%29%253B%250A%250A%252F%252F%2520Pause%2520on%2520hover%250Aconst%2520carousel%2520%253D%2520document.querySelector%28%27.carousel%27%29%253B%250Acarousel.addEventListener%28%27mouseenter%27%252C%2520%28%29%2520%253D%253E%2520clearInterval%28autoSlideInterval%29%29%253B%250Acarousel.addEventListener%28%27mouseleave%27%252C%2520%28%29%2520%253D%253E%2520autoSlideInterval%2520%253D%2520setInterval%28%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520nextButton.click%28%29%253B%250A%257D%252C%25203000%29%29%253B"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+          </div>
+
+
+          <h5>Indicators</h5>
+          <p>Add indicators for each slide and update your HTML and JavaScript:</p>
+          <p>Html:</p>
+
+          <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:23%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2520Indicators%2520%28This%2520is%2520placed%2520inside%2520body%29%2520--%253E%250A%253Cdiv%2520class%253D%2522carousel-indicators%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522indicator%2520active%2522%2520data-index%253D%25220%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522indicator%2522%2520data-index%253D%25221%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522indicator%2522%2520data-index%253D%25222%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+          </div>
+
+          <p>JavaScript:</p>
+
+          <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:23%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%252F%252FIndicators%250Aconst%2520indicators%2520%253D%2520document.querySelectorAll%28%27.indicator%27%29%253B%250A%250Aindicators.forEach%28indicator%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520indicator.addEventListener%28%27click%27%252C%2520%28%29%2520%253D%253E%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520items%255BcurrentIndex%255D.classList.remove%28%27active%27%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520indicators%255BcurrentIndex%255D.classList.remove%28%27active%27%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520currentIndex%2520%253D%2520parseInt%28indicator.getAttribute%28%27data-index%27%29%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520items%255BcurrentIndex%255D.classList.add%28%27active%27%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520indicators%255BcurrentIndex%255D.classList.add%28%27active%27%29%253B%250A%2520%2520%2520%2520%257D%29%253B%250A%257D%29%253B"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+          </div>
+
+          <!-- Carousel-guide Advanced Features-->
+          <h3>Advanced Features</h3>
+          <h5>Using a Library</h5>
+          <p>For more advanced carousels, consider using libraries like Slick, Swiper, or Bootstrap. Here’s a brief example using Bootstrap’s carousel component:
+          </p>
+          <h5>1. Include Bootstrap:</h5>
+          <p>Add the following in the <code>&lt;head&gt;</code> section of your HTML file:</p>
+
+          <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:22%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520%2520Include%2520Bootstrap%2520%28This%2520is%2520placed%2520inside%2520head%29%2520--%253E%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fstackpath.bootstrapcdn.com%252Fbootstrap%252F4.5.2%252Fcss%252Fbootstrap.min.css%2522%253E%250A%253Cscript%2520src%253D%2522https%253A%252F%252Fcode.jquery.com%252Fjquery-3.5.1.slim.min.js%2522%253E%253C%252Fscript%253E%250A%253Cscript%2520src%253D%2522https%253A%252F%252Fcdn.jsdelivr.net%252Fnpm%252F%2540popperjs%252Fcore%25402.9.3%252Fdist%252Fumd%252Fpopper.min.js%2522%253E%253C%252Fscript%253E%250A%253Cscript%2520src%253D%2522https%253A%252F%252Fstackpath.bootstrapcdn.com%252Fbootstrap%252F4.5.2%252Fjs%252Fbootstrap.min.js%2522%253E%253C%252Fscript%253E"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+          </div>
+
+
+          <h5>2. Bootstrap Carousel Markup:</h5>
+
+          <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:54%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21--%2520Bootstrap%2520Carousel%2520Markup%2520%28This%2520is%2520placed%2520inside%2520body%29--%253E%250A%253Cdiv%2520id%253D%2522carouselExampleIndicators%2522%2520class%253D%2522carousel%2520slide%2522%2520data-ride%253D%2522carousel%2522%253E%250A%2520%2520%2520%2520%253Col%2520class%253D%2522carousel-indicators%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520data-target%253D%2522%2523carouselExampleIndicators%2522%2520data-slide-to%253D%25220%2522%2520class%253D%2522active%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520data-target%253D%2522%2523carouselExampleIndicators%2522%2520data-slide-to%253D%25221%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cli%2520data-target%253D%2522%2523carouselExampleIndicators%2522%2520data-slide-to%253D%25222%2522%253E%253C%252Fli%253E%250A%2520%2520%2520%2520%253C%252Fol%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-inner%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image1.jpg%2522%2520class%253D%2522d-block%2520w-100%2522%2520alt%253D%2522...%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image2.jpg%2522%2520class%253D%2522d-block%2520w-100%2522%2520alt%253D%2522...%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image3.jpg%2522%2520class%253D%2522d-block%2520w-100%2522%2520alt%253D%2522...%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522carousel-control-prev%2522%2520href%253D%2522%2523carouselExampleIndicators%2522%2520role%253D%2522button%2522%2520data-slide%253D%2522prev%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522carousel-control-prev-icon%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522sr-only%2522%253EPrevious%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%2520%2520%2520%2520%253Ca%2520class%253D%2522carousel-control-next%2522%2520href%253D%2522%2523carouselExampleIndicators%2522%2520role%253D%2522button%2522%2520data-slide%253D%2522next%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522carousel-control-next-icon%2522%2520aria-hidden%253D%2522true%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522sr-only%2522%253ENext%253C%252Fspan%253E%250A%2520%2520%2520%2520%253C%252Fa%253E%250A%253C%252Fdiv%253E"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+          </div>
+
+          <!-- Carousel-guide What the final code should look like-->
+          <h2 class="text-center mb-3">What the final code should look like with bootstrap</h2>
+
+          <div class="code_container container mb-5 rounded-3">
+            <div style="padding-bottom:100%; position:relative; display:block; width: 100%">
+                <iframe width="100%" height="100%" frameborder="0" style="position:absolute; top:0; left:0" src="https://carbon.now.sh/embed?bg=rgba%28255%2C233%2C236%2C1%29&t=seti&wt=none&l=auto&width=680&ds=false&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253C%21DOCTYPE%2520html%253E%250A%253C%21--%2520HTML%2520Boilerplate%2520--%253E%250A%253Chtml%2520lang%253D%2522en%2522%253E%250A%253Chead%253E%250A%2520%2520%2520%2520%253Cmeta%2520charset%253D%2522UTF-8%2522%253E%250A%2520%2520%2520%2520%253Cmeta%2520name%253D%2522viewport%2522%2520content%253D%2522width%253Ddevice-width%252C%2520initial-scale%253D1.0%2522%253E%250A%2520%2520%2520%2520%253Ctitle%253ECarousel%2520Example%253C%252Ftitle%253E%250A%2520%2520%2520%2520%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522styles.css%2522%253E%250A%253C%252Fhead%253E%250A%253Cbody%253E%250A%250A%253Cdiv%2520class%253D%2522carousel%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image1.jpg%2522%2520alt%253D%2522Image%25201%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image2.jpg%2522%2520alt%253D%2522Image%25202%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image3.jpg%2522%2520alt%253D%2522Image%25203%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522carousel-control-prev%2522%253E%2526lt%253B%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522carousel-control-next%2522%253E%2526gt%253B%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253Cscript%2520src%253D%2522script.js%2522%253E%253C%252Fscript%253E%250A%253C%252Fbody%253E%250A%253C%252Fhtml%253E%250A%250A%253C%21--%2520HTML%2520Markup%2520--%253E%250A%253C%21--%2520%2520Creating%2520the%2520Carousel%2520Structure%2520%28This%2520is%2520placed%2520inside%2520body%29%2520--%253E%250A%253Cdiv%2520class%253D%2522carousel%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2520active%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image1.jpg%2522%2520alt%253D%2522Image%25201%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image2.jpg%2522%2520alt%253D%2522Image%25202%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522carousel-item%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cimg%2520src%253D%2522image3.jpg%2522%2520alt%253D%2522Image%25203%2522%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522carousel-control-prev%2522%253E%2526lt%253B%253C%252Fbutton%253E%250A%2520%2520%2520%2520%253Cbutton%2520class%253D%2522carousel-control-next%2522%253E%2526gt%253B%253C%252Fbutton%253E%250A%253C%252Fdiv%253E%250A%250A%253C%21--%2520%2520Indicators%2520%28This%2520is%2520placed%2520inside%2520body%29%2520--%253E%250A%253Cdiv%2520class%253D%2522carousel-indicators%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522indicator%2520active%2522%2520data-index%253D%25220%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522indicator%2522%2520data-index%253D%25221%2522%253E%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522indicator%2522%2520data-index%253D%25222%2522%253E%253C%252Fspan%253E%250A%253C%252Fdiv%253E%250A%250A%250A%253C%21--%2520Advanced%2520Features%2520--%253E%250A%250A%253C%21--%2520%2520Include%2520Bootstrap%2520%28This%2520is%2520placed%2520inside%2520head%29%2520--%253E%250A%253Clink%2520rel%253D%2522stylesheet%2522%2520href%253D%2522https%253A%252F%252Fstackpath.bootstrapcdn.com%252Fbootstrap%252F4.5.2%252Fcss%252Fbootstrap.min.css%2522%253E%250A%253Cscript%2520src%253D%2522https%253A%252F%252Fcode.jquery.com%252Fjquery-3.5.1.slim.min.js%2522%253E%253C%252Fscript%253E%250A%253Cscript%2520src%253D%2522https%253A%252F%252Fcdn.jsdelivr.net%252Fnpm%252F%2540popperjs%252Fcore%25402.9.3%252Fdist%252Fumd%252Fpopper.min.js%2522%253E%253C%252Fscript%253E%250A%253Cscript%2520src%253D%2522https%253A%252F%252Fstackpath.bootstrapcdn.com%252Fbootstrap%252F4.5.2%252Fjs%252Fbootstrap.min.js%2522%253E%253C%252Fscript%253E%250A%250A%253C%21--%2520Bootstrap%2520Carousel%2520Markup%2520%28This%2520is%2520placed%2520inside%2520b"
+                    style="border:0; transform: scale(1); overflow:hidden;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+              </div>
+            </div>
 
 
       <!-- ELABORATION SECTION 2 -->
 
       <div class="about w-100 py-5 mb-5">
         <div class="container">
-            <h3 class="mb-3">How and why we use image carousels:</h3>
-            <p>How We Use Image Carousels: <br> <br>
-
-                1. Displaying Multiple Images: Image carousels efficiently showcase a variety of visuals within a limited space, making them ideal for presenting diverse products, services, or portfolio items without overwhelming the webpage. <br> <br>
-                2. Encouraging Engagement: Carousels captivate users' attention through interactive features like manual navigation or automatic transitions. This dynamic browsing experience fosters engagement, potentially leading to increased user interaction and time spent on the website. <br> <br>
-                
-                Why We Use Image Carousels: <br> <br>
-                
-                1. Improving User Experience: Image carousels positively contribute to user experience by offering visually appealing and interactive elements that facilitate content discovery and exploration. They streamline the browsing process, making it easier for users to find relevant information. <br> <br>
-                2. Boosting Conversions: Carousels strategically highlight key products, services, or calls to action (CTAs), driving conversions through persuasive visuals and compelling messaging. By encouraging users to take desired actions, such as making a purchase or subscribing, carousels effectively contribute to conversion optimization efforts.</p>
-
+          <h3 class="mb-3">Troubleshooting</h3>
+          <h5>Common issues</h5>
+         <li>Images not displaying:</li>
+         <p>Ensure the image paths are correct and the images are in the appropriate directory.</p>
+         <li>Carousel not sliding:</li>
+         <p>Check for JavaScript errors in the console and ensure all event listeners are correctly attached.</p>
+         <h5>Debugging Tips</h5>
+         <li>Use browser developer tools to inspect the carousel elements and check for CSS or JavaScript issues.</li>
+         <li>Log JavaScript variables and events to the console to trace the flow of your code.</li>
+         <br>
+         <h3>Conclusion</h3>
+         <p>Congratulations! You have successfully created a functional carousel. This guide covered the basics of setting up the HTML, CSS, and JavaScript for a simple carousel, as well as some enhancements to make it more interactive.</p>
         </div>
       </div>
 
@@ -177,7 +253,8 @@
       <!-- VIDEO SECTION -->
 
       <div class="container">
-        <h1 class="text-center mb-5">VIDEO GUIDE</h1>
+        <h1 class="text-center mb-3">VIDEO GUIDE</h1>
+        <h3 class="text-center mb-5">Another way to code it</h3>
       </div>
 
       <div class="container">
